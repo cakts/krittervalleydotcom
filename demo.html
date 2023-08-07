@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritter Valley</title>
+    <link href="./assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a class="nav-btn" href="home.html">HOME</a>
+        <a class="nav-btn" href="demo.html">DEMO</a>
+        <a class="nav-btn" href="faq.html">FAQ</a>
+        <a class="nav-btn" href="contact.html">CONTACT</a>
+    </nav>
+    
+    <img class="logo" src="./assets/images/HIGLMBf.png" alt="Kritter Valley Logo">
+    <h2>try out the demo? you might REALLY like it!</h2>
+    <br>
+    <div class="download-section">
+        <a class="btn" href="#" download>Download for Windows</a>
+        <a class="btn" href="#" download>Download for Mac</a>
+        <a class="btn" href="#" download>Download for Linux</a>
+    </div>
+    <br>
+    <img class="gif" src="./assets/images/kv_3.gif" onclick="openImage('./assets/images/kv_3.gif')">
+    <br>
+    <h3>v0.2.6 Patch Notes</h3>
+    <div class="patchnotes">
+        <ul>
+            <li>- First Demo Build! WOWOWOWOW</li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="overlay" id="overlay" onclick="closeImage()">
+        <img id="overlayImage" src="#" alt="Full Screen Screenshot" onclick="event.stopPropagation()">
+        <span class="close-btn" onclick="event.stopPropagation(); closeImage()">X</span>
+    </div>
+    <script>
+        function openImage(url) {
+            document.getElementById('overlayImage').src = url;
+            document.getElementById('overlay').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeImage() {
+            document.getElementById('overlay').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+
+    <img class="gooseboxgameslogo" src="./assets/images/goosebox_850x850_tp.png" alt="Goosebox Games Logo">
+</body>
+
+</html>

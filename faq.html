@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kritter Valley</title>
+    <link href="./assets/css/main.css" rel="stylesheet">
+
+    <style>
+        p {
+            color: #aaa;
+        }
+
+        h2 {
+            font-size: 150%;
+            color: #fff;
+            text-shadow: 5px 5px 5px #000000;
+        }
+
+        a {
+            color: #ffeb33;
+        }
+
+        .faq-container h3 {
+            text-align: left;
+            text-shadow: 5px 5px 5px #000000;
+        }
+
+        .faq-container p {
+            text-align: right;
+            text-shadow: 5px 5px 5px #000000;
+        }
+
+        .faq-container {
+            margin: 0px auto;
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a class="nav-btn" href="home.html">HOME</a>
+        <a class="nav-btn" href="demo.html">DEMO</a>
+        <a class="nav-btn" href="faq.html">FAQ</a>
+        <a class="nav-btn" href="contact.html">CONTACT</a>
+    </nav>
+    <br>
+    <h2>Frequently Asked Questions</h2>
+    <br>
+    <div class="faq-container">
+
+        <h3>Q] How long does it take to beat Kritter Valley?</h3>
+        <p>A] idk</p>
+        
+        <h3>Q] Can I play Kritter Valley on console?</h3>
+        <p>A] you can't even play it on PC yet</p>
+        
+        <h3>Q] Will there be any DLC in the future?</h3>
+        <p>A] the game isn't even out</p>
+        
+        <h3>Q] Is there a community forum or group where I can connect with other players?</h3>
+        <p>A] yes yes yes check out the <a href="https://discord.gg/anyXHk6UeT">discord</a></p>
+
+        <h3>Q] How can I report a bug</h3>
+        <p>A] KRITTER VALLEY has no bugs, only features. If you would like to report a feature you can use our <a href="https://discord.gg/anyXHk6UeT"><s>bug</s> feature report form</a></p>
+
+        <h3>Q] Will there be mod support for Kritter Valley?</h3>
+        <p>A] hopefully!</p>
+    </div>
+    
+    <script>
+        // You can still keep these functions if you have any overlay or pop-up modal
+        function openImage(url) {
+            document.getElementById('overlayImage').src = url;
+            document.getElementById('overlay').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeImage() {
+            document.getElementById('overlay').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+    
+    <img class="gooseboxgameslogo" src="./assets/images/goosebox_850x850_tp.png" alt="Goosebox Games Logo">
+</body>
+
+</html>

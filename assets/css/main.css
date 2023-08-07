@@ -1,0 +1,311 @@
+/* Reset default browser margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'DepixelHalbfett';
+  src: url('../fonts/depixelhalbfett.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'DepixelHalbfett', monospace;
+  text-align: center;
+  padding: 0px;
+  background: radial-gradient(circle at center, #253a5e 0%, #0c0d13 100%);
+  background-attachment: fixed;
+  color: #e0e0e0;
+}
+
+img.logo {
+  width: 35%;
+  margin: 20px 0;
+  padding: 2px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+img.gooseboxgameslogo {
+  position: fixed;
+  width: 12%;
+  height: auto;
+  left: 0px;
+  bottom: 0px;
+}
+
+img.screenshot {
+  width: 24%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: inline-block;
+  margin: 1%;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+img.gif {
+  width: 30%;
+  height: auto;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  display: inline-block;
+  margin: 1%;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+
+@keyframes slideFingerRight {
+  0% {
+    margin-left: 200px;
+  }
+
+  50% {
+    margin-left: 240px;
+  }
+
+  100% {
+    margin-left: 200px;
+  }
+}
+
+@keyframes slideFingerLeft {
+  0% {
+    margin-left: -300px;
+  }
+
+  50% {
+    margin-left: -340px;
+  }
+
+  100% {
+    margin-left: -300px;
+  }
+}
+
+img.pointing-finger-right {
+  display: inline-block;
+  height: 70px;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -25px;
+  transform: scaleX(-1);
+  animation: slideFingerRight 2s infinite;
+}
+
+img.pointing-finger-left {
+  display: inline-block;
+  height: 70px;
+  position: absolute;
+  margin-left: -300px;
+  margin-top: -25px;
+  animation: slideFingerLeft 2s infinite;
+}
+
+img.pointing-finger-down {
+  display: none;
+  width: 70px;
+  padding-bottom: 15px;
+}
+
+h2 {
+  margin: 20px auto;
+  font-size: 18px;
+  max-width: 60%;
+  color: #aaa;
+  text-shadow: 5px 5px 5px #000000;
+}
+
+h3 {
+  margin: 20px auto;
+  max-width: 50%;
+  color: #e0e0e0;
+  text-shadow: 5px 5px 5px #000000;
+}
+
+p {
+  margin: 20px auto;
+  font-size: 14px;
+  max-width: 40%;
+  min-width: 30%;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+.btn {
+  display: inline-block;
+  margin: 4px;
+  padding: 5px 10px;
+  background-color: #1a1c28;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: #aaa;
+  transition: background-color .3s, color .3s;
+  font-size: 20px;
+
+}
+
+.btn:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.overlay img {
+  width: 40%;
+  max-height: 90%;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #aaa;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav {
+  background-color: #1a1c28;
+  padding: 10px 0;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.nav-btn {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 35px;
+  text-decoration: none;
+  text-align: center;
+  color: #aaa;
+  font-size: 18px;
+  border-bottom: 2px solid transparent;
+  /* Initially transparent */
+  transition: border-color .3s, color .3s;
+}
+
+.nav-btn:hover {
+  border-bottom: 2px solid #e0e0e0;
+  /* Show underline on hover */
+  color: #e0e0e0;
+}
+
+/* Styles for the menu icon */
+.menu-icon .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #e0e0e0;
+}
+
+/* Hide the links by default on mobile */
+.nav-links {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+
+/* Show the menu icon by default on mobile */
+.menu-icon {
+  display: block;
+  cursor: pointer;
+}
+
+/* Styling for when the nav is active */
+.active-nav .nav-links {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 0px;
+  }
+
+  img.logo {
+    width: 70%;
+  }
+
+  img.gooseboxgameslogo {
+    position: fixed;
+    width: 25%;
+    height: auto;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  img.screenshot,
+  img.gif {
+    width: 70%;
+    /* Adjusting to fit two images side by side on mobile */
+    margin: 1% 2%;
+    /* Adjusting margin for better spacing */
+  }
+
+  .overlay img {
+    width: 90%;
+    max-height: 90%;
+  }
+
+  h2 {
+    max-width: 70%;
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 12px;
+    max-width: 80%;
+    /* Allow the paragraph to take full width on mobile */
+  }
+
+  .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .nav-btn {
+    display: block;
+    margin: 0px auto;
+    font-size: 10px;
+    width: 70%;
+    text-align: center;
+  }
+
+  img.pointing-finger-right {
+    display: none;
+  }
+  
+  img.pointing-finger-left {
+    display: none;
+  }
+  
+  img.pointing-finger-down {
+    display: inline-block;
+  }
+}
