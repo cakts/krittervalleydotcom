@@ -5,18 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kritter Valley</title>
-    <link href="./assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/main.css" rel="stylesheet">
+        <!-- For Android -->
+        <link rel="manifest" href="../assets/icons/site.webmanifest">
+        <link rel="icon" type="image/png" sizes="192x192" href="../assets/icons/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="../assets/icons/android-chrome-512x512.png">
+    
+        <!-- For iOS -->
+        <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+    
+        <!-- General Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
+    
+        <!-- Classic Favicon -->
+        <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
 </head>
 
 <body>
     <nav>
-        <a class="nav-btn" href="index.html">HOME</a>
-        <a class="nav-btn" href="demo.html">DEMO</a>
-        <a class="nav-btn" href="faq.html">FAQ</a>
-        <a class="nav-btn" href="contact.html">CONTACT</a>
+        <a class="nav-btn" href="./home/">HOME</a>
+        <a class="nav-btn" href="./demo/">DEMO</a>
+        <a class="nav-btn" href="./faq/">FAQ</a>
+        <a class="nav-btn" href="./contact/">CONTACT</a>
     </nav>
     
-    <img class="logo" src="./assets/images/HIGLMBf.png" alt="Kritter Valley Logo">
+    <a href="./home/"><img class="logo" src="../assets/images/HIGLMBf.png" alt="Kritter Valley Logo"></a>
     <h2>try out the demo? you might REALLY like it!</h2>
     <br>
     <div class="download-section">
@@ -25,7 +39,7 @@
         <a class="btn" href="#" download>Download for Linux</a>
     </div>
     <br>
-    <img class="gif" src="./assets/images/kv_3.gif" onclick="openImage('./assets/images/kv_3.gif')">
+    <img class="gif" src="../assets/images/kv_3.gif" onclick="openImage('../assets/images/kv_3.gif')">
     <br>
     <h3>v0.2.6 Patch Notes</h3>
     <div class="patchnotes">
@@ -51,7 +65,7 @@
         }
     </script>
 
-    <img class="gooseboxgameslogo" src="./assets/images/goosebox_850x850_tp.png" alt="Goosebox Games Logo">
+    <img class="gooseboxgameslogo" src="../assets/images/goosebox_850x850_tp.png" alt="Goosebox Games Logo">
 </body>
 
 </html>
